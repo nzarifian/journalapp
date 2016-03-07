@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+	<div class="hero">
+		<div class="text">
+			<h1>My Journal</h1>
+				<h2>...collection of thoughts...</h2>
+		</div>
+	</div>
+
+<!-- search bar	 -->
+	<div id="tfheader">
+		<form id="tfnewsearch" class="search">
+		        <input type="text" class="tftextinput" name="searchbtn" size="21" maxlength="120"><button class="tfbutton">Search Titles</button>
+		</form>
+	<div class="tfclear"></div>
+	</div>
+	<!-- search bar end -->
+
+	<form class ="theform" style="text-align:center">
+	
+		<span class="input input--haruki">
+			<input class="input__field input__field--haruki" type="text" name ="title" id="input-1" />
+			<label class="input__label input__label--haruki" for="input-1">
+				<span class="input__label-content input__label-content--haruki">Title</span>
+			</label>
+		</span>
+<p>&nbsp;</p>
+		<span class="input input--haruki">
+			<input class="input__field input__field--haruki" type="text" name ="author" id="input-2" />
+			<label class="input__label input__label--haruki" for="input-2">
+				<span class="input__label-content input__label-content--haruki">Author</span>
+			</label>
+		</span>
+<p>&nbsp;</p>
+		<span class="input input--haruki">
+			<textarea class="input__field input__field--haruki" textarea type="text" name ="content" id="input-2"></textarea>
+				<label class="input__label input__label--haruki" for="input-2" />
+				<span class="input__label-content input__label-content--haruki">Content</label>
+		</span></span>
+<p>&nbsp;</p>
+		<span class="input input--haruki">
+			<input class="input__field input__field--haruki" textarea type="text" name ="tag" id="input-2" />
+			<label class="input__label input__label--haruki" for="input-2">
+				<span class="input__label-content input__label-content--haruki">Tags</span>
+			</label>
+		</span>
+
+<p>&nbsp;</p>		
+	<!-- Title
+	<p>&nbsp;</p>
+	<input type="text" name ="title" placeholder="title">
+
+	<p>&nbsp;</p>
+	
+	Author
+	<p>&nbsp;</p>
+	<input type="text" name ="author" placeholder="author">
+	
+	<p>&nbsp;</p>
+	
+	Content
+	<p>&nbsp;</p>
+	<textarea type="text" name ="content" placeholder="content"></textarea>
+	<p>&nbsp;</p>
+	
+	Tags
+	<p>&nbsp;</p>
+	<input type="text" name ="tag" placeholder="tags">
+	<p>&nbsp;</p> -->
+
+	<button type="submit" class="btn btn-warning">Make Journal Entry!</button>
+	<p>&nbsp;</p>
+
+	<h2>Previous Entries:</h2>
+	</form>
+
+
+	<div class="theJournal" style="text-align:center">
+	</div>
+
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/vendor/app.js"></script>
+	// <script src="js/classie.js"></script>
+	// 	<script>
+	// 		(function() {
+	// 			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+	// 			if (!String.prototype.trim) {
+	// 				(function() {
+	// 					// Make sure we trim BOM and NBSP
+	// 					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+	// 					String.prototype.trim = function() {
+	// 						return this.replace(rtrim, '');
+	// 					};
+	// 				})();
+	// 			}
+
+	// 			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+	// 				// in case the input is already filled..
+	// 				if( inputEl.value.trim() !== '' ) {
+	// 					classie.add( inputEl.parentNode, 'input--filled' );
+	// 				}
+
+	// 				// events:
+	// 				inputEl.addEventListener( 'focus', onInputFocus );
+	// 				inputEl.addEventListener( 'blur', onInputBlur );
+	// 			} );
+
+	// 			function onInputFocus( ev ) {
+	// 				classie.add( ev.target.parentNode, 'input--filled' );
+	// 			}
+
+	// 			function onInputBlur( ev ) {
+	// 				if( ev.target.value.trim() === '' ) {
+	// 					classie.remove( ev.target.parentNode, 'input--filled' );
+	// 				}
+	// 			}
+	// 		})();
+		</script>
+
+</body>
+</html>
